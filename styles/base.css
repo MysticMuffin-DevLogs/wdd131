@@ -1,0 +1,137 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template: auto 1fr auto / 300px 1fr auto;
+  background-color: white;
+  margin: 0;
+}
+
+header {
+  background-color: #2a4b6d;
+  text-align: center;
+  padding: 1rem;
+  grid-column: 1/4;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+
+header h1 span {
+  color: #ffcc00;
+}
+
+nav {
+  background-color: rgb(30, 29, 29);
+  grid-column: 1/4;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header {
+  margin-left: 0.67em;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+li {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: white;
+  grid-column: 1/3;
+}
+
+.main-header {
+  margin-left: 0.67em;
+}
+
+.about-me {
+  background-color: #315b85;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.about-me h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.about-me .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-me img {
+  border-radius: 5px;
+  width: 150px;
+  height: auto;
+}
+
+aside {
+  background-color: white;
+  grid-column: 3/4;
+  padding: 1rem;
+  border-radius: 5px;
+  display: block;
+}
+
+aside h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+aside ul {
+  padding-left: 0;
+}
+
+aside ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+aside ul li a {
+  color: #315b85;
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  color: white;
+  background-color: rgb(30, 29, 29);
+  grid-column: 1/4;
+  place-items: center;
+}
