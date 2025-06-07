@@ -1,0 +1,8 @@
+Subject of website - 
+      I am going to create a site that is called project site. with a home page that showcases different websites and or developer projects
+
+Content -
+      Content is there will be a home page and a search bar where you could search for certain pages or content of different projects
+
+REason -
+    I would eventually like to create a full stack website where it will host developer projects and all you need is an acocunt.
