@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Product Review</h1>
+      <form method="get" action="review.html">
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <fieldset>
+          <legend>Overall Rating:</legend>
+          <label
+            ><input type="radio" name="rating" value="1" required /> ☆</label
+          >
+          <label><input type="radio" name="rating" value="2" /> ☆☆</label>
+          <label><input type="radio" name="rating" value="3" /> ☆☆☆</label>
+          <label><input type="radio" name="rating" value="4" /> ☆☆☆☆</label>
+          <label><input type="radio" name="rating" value="5" /> ☆☆☆☆☆</label>
+        </fieldset>
+
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="installDate" required />
+
+        <fieldset>
+          <legend>Useful Features (Check all that apply):</legend>
+          <label
+            ><input
+              type="checkbox"
+              name="feature1"
+              id="feature1"
+              value="Feature A"
+            />
+            Feature A</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="feature2"
+              id="feature2"
+              value="Feature B"
+            />
+            Feature B</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="feature3"
+              id="feature3"
+              value="Feature C"
+            />
+            Feature C</label
+          >
+        </fieldset>
+
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label for="username">Your Name (optional):</label>
+        <input type="text" id="username" name="username" />
+
+        <input type="submit" value="Submit Review" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Product Reviews. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+  </body>
+</html>
