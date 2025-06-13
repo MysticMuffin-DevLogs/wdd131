@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="form.html">Sign Up & Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">Project Book</h1>
+    </header>
+
+    <main>
+      <!-- Sign-Up Section -->
+      <section class="form-section">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+
+      <!-- Product Review Section -->
+      <section class="form-section">
+        <h2>Product Review</h2>
+        <form method="get" action="review.html">
+          <label for="product">Product Name:</label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+
+          <fieldset>
+            <legend>Overall Rating:</legend>
+            <label
+              ><input type="radio" name="rating" value="1" required /> ☆</label
+            >
+            <label><input type="radio" name="rating" value="2" /> ☆☆</label>
+            <label><input type="radio" name="rating" value="3" /> ☆☆☆</label>
+            <label><input type="radio" name="rating" value="4" /> ☆☆☆☆</label>
+            <label><input type="radio" name="rating" value="5" /> ☆☆☆☆☆</label>
+          </fieldset>
+
+          <label for="install-date">Date of Installation:</label>
+          <input type="date" id="install-date" name="installDate" required />
+
+          <fieldset>
+            <legend>Useful Features (Check all that apply):</legend>
+            <label
+              ><input type="checkbox" name="feature1" value="Feature A" />
+              Feature A</label
+            >
+            <label
+              ><input type="checkbox" name="feature2" value="Feature B" />
+              Feature B</label
+            >
+            <label
+              ><input type="checkbox" name="feature3" value="Feature C" />
+              Feature C</label
+            >
+          </fieldset>
+
+          <label for="review">Written Review:</label>
+          <textarea id="review" name="review"></textarea>
+
+          <label for="username">Your Name (optional):</label>
+          <input type="text" id="username" name="username" />
+
+          <input type="submit" value="Submit Review" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Product Reviews. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+    <script>
+      // Handle sign-up
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          alert(`Thank you for signing up, ${name}!`);
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
