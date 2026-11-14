@@ -1,24 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Daniel McKenna WDD131" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel McKenna</title>
     <meta
       name="description"
-      content="WDD 131 - Dynamic Web Fundamentals, Daniel McKenna Home page"
+      content="Daniel McKenna's WDD 131 Dynamic Web Fundamentals course home page with an about-me profile, country details, and web development resources."
     />
-    <title>WDD 131-Dynamic Web Fundamentals - Daniel McKenna</title>
-    <link rel="stylesheet" href="./styles/base.css" />
-    <script src="./scripts/getdates.js"></script>
+    <meta name="author" content="Daniel McKenna" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header>
-      <h1 class="nav-header">
-        WDD 131: Dynamic Web Fundamentals - <span>Daniel McKenna</span>
-      </h1>
+      <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
       <nav>
-        <ul class="nav-ul">
+        <ul>
           <li>
             <a href="https://www.linkedin.com/in/dmckenna15/">LinkedIn</a>
           </li>
@@ -29,40 +33,44 @@
               >Scripture</a
             >
           </li>
-          <li><a href="#">Final Project</a></li>
+          <li><a href="project.html">Final Project</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about-me">
+      <h1>Daniel McKenna</h1>
+
+      <section class="card">
         <h2>About Me</h2>
-        <div class="card">
-          <p>
-            My name is Daniel and I go by Dan. I was born in Colorado. I
-            currently live in Utah with my Wife and Daughter. I am currently
-            working as an Integration Specialist for a FinTech Company. My
-            family is my world and I love spending time with them. I love to
-            travel and I love to learn new things.
-          </p>
-          <img src="./images/profile1.png" alt="Daniel's Profile Picture" />
-        </div>
+        <img
+          src="images/profile1.png"
+          alt="Portrait of Daniel McKenna"
+          width="200"
+          height="200"
+        />
+        <p>
+          My name is Daniel and I go by Dan. I was born in Colorado. I currently
+          live in Utah with my Wife and Daughter. I am currently working as an
+          Integration Specialist for a FinTech Company. My family is my world
+          and I love spending time with them. I love to travel and I love to
+          learn new things.
+        </p>
       </section>
-      <section class="about-me">
-        <h2>Manatees are cool</h2>
-        <div class="card">
-          <p>
-            Manatees, often referred to as "sea cows," are large, gentle marine
-            mammals found in warm coastal waters. They have a distinct, rounded
-            body with a broad, flat tail that helps them glide gracefully
-            through the water. These herbivores primarily feed on seagrasses and
-            other aquatic plants, spending much of their day foraging. Despite
-            their large size, manatees are slow-moving creatures, typically
-            traveling at speeds of around 5 miles per hour. Unfortunately,
-            manatees face threats from habitat loss, boat collisions, and
-            pollution, making conservation efforts crucial for their survival.
-          </p>
-          <img src="./images/manatee.jpg" alt="Picture of a manatee" />
-        </div>
+
+      <section class="card">
+        <h2>Country: United States</h2>
+        <img
+          src="images/country.webp"
+          alt="Mountains near Salt Lake City, Utah"
+          width="800"
+          height="533"
+          loading="lazy"
+        />
+        <p>
+          I live in Utah, in the western United States. Write 2-3 sentences here
+          about the country or your state: a fact, what you like about living
+          there, a favorite place.
+        </p>
       </section>
     </main>
     <aside>
