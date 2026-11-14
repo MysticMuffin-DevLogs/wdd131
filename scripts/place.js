@@ -1,26 +1,22 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const temp = parseFloat(document.getElementById("temp").textContent);
-  const speed = parseFloat(document.getElementById("speed").textContent);
-  const chillEl = document.getElementById("chill");
+// Static weather values (metric, since Japan uses Celsius)
+const temperature = 2; // °C
+const windSpeed = 12; // km/h
 
-  function calculateWindChill(t, s) {
-    // Celsius version of the wind chill formula
-    return (
-      13.12 +
-      0.6215 * t -
-      11.37 * Math.pow(s, 0.16) +
-      0.3965 * t * Math.pow(s, 0.16)
-    ).toFixed(1);
-  }
+function calculateWindChill(t, v) {
+  // prettier-ignore
+  return (13.12 + 0.6215 * t - 11.37 * v ** 0.16 + 0.3965 * t * v ** 0.16).toFixed(1);
+}
 
-  if (temp <= 10 && speed > 4.8) {
-    chillEl.textContent = `${calculateWindChill(temp, speed)} °C`;
-  } else {
-    chillEl.textContent = "N/A";
-  }
+document.querySelector("#temp").textContent = temperature;
+document.querySelector("#speed").textContent = windSpeed;
 
-  document.getElementById("currentyear").textContent = new Date().getFullYear();
-  document.getElementById(
-    "lastModified"
-  ).textContent = `Last modified: ${document.lastModified}`;
-});
+const windChill =
+  temperature <= 10 && windSpeed > 4.8
+    ? `${calculateWindChill(temperature, windSpeed)} °C`
+    : "N/A";
+document.querySelector("#chill").textContent = windChill;
+
+// Footer dates
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent =
+  `Last modified: ${document.lastModified}`;
