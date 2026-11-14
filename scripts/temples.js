@@ -1,6 +1,9 @@
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
+const menuToggle = document.querySelector("#menu-toggle");
+const navMenu = document.querySelector("#nav-menu");
 
-hamburger.addEventListener("click", () => {
-  menu.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  const isOpen = navMenu.classList.contains("open");
+  menuToggle.textContent = isOpen ? "✕" : "☰";
+  menuToggle.setAttribute("aria-expanded", isOpen);
 });
