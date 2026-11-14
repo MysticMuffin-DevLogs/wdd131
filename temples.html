@@ -1,19 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/temples.css" />
-    <script src="./scripts/getdates.js"></script>
-    <script src="./scripts/temples.js" defer></script>
-    <title>Temples Page: Daniel McKenna</title>
+    <title>Temple Album | Daniel McKenna | WDD 131</title>
+    <meta
+      name="description"
+      content="Temple Album by Daniel McKenna: a responsive photo gallery of Latter-day Saint temples built for WDD 131 Dynamic Web Fundamentals."
+    />
+    <meta name="author" content="Daniel McKenna" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
   </head>
   <body>
     <header>
-      <nav>
-        <button id="hamburger">&#9776;</button>
-        <ul id="menu">
-          <li><a href="#">Home</a></li>
+      <span class="site-title">Temple Album</span>
+      <button
+        id="menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Old</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Large</a></li>
@@ -23,49 +42,49 @@
     </header>
     <main>
       <h1>Home</h1>
-      <section class="grid">
+      <section class="gallery">
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
 
         <figure>
-          <img src="./images/sandiego_temple.jpg" alt="San Diego California" />
+          <img src="./images/sandiego_temple.webp" alt="San Diego California" />
           <figcaption>San Diego California</figcaption>
         </figure>
       </section>
