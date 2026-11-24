@@ -1,0 +1,22 @@
+main {
+  text-align: center;
+}
+img {
+  display: block; /* one centered column at every width */
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+  animation: fadeFromBlack 2s ease-in;
+}
+@keyframes fadeFromBlack {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  background: #000;
+  color: #eee;
+} /* black page = "fade from black" */
