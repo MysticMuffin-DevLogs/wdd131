@@ -111,3 +111,29 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+/* Temple cards */
+.temple-card {
+  text-align: left;
+}
+
+.temple-card h2 {
+  color: var(--highlight);
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.temple-card .label {
+  color: var(--accent);
+}
+
+.temple-card img {
+  margin-top: 0.75rem;
+  aspect-ratio: 400 / 250;
+  object-fit: cover;
+}
