@@ -1,101 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Pages - Site Plan</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="Daniel McKenna" />
+    <meta
+      name="description"
+      content="Website planning document for Family Budget, a budgeting site for young families. WDD 131 final project site plan by Daniel McKenna."
+    />
+    <title>Site Plan | Family Budget | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/siteplan.css" />
+    <script src="../scripts/getdates.js" defer></script>
   </head>
   <body>
-    <h1>Project Pages - Site Plan</h1>
-
-    <div class="section">
-      <h2>Site Name</h2>
-      <p><strong>Project Pages</strong></p>
-      <p>
-        This name reflects a central space for developers to showcase, share,
-        and discover projects across various domains such as web development,
-        app development, game design, and more. It's simple, descriptive, and
-        relevant to the developer community.
-      </p>
-      <p>
-        <em>Optional domain availability:</em> projectpages.dev or
-        project-pages.io
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Site Purpose</h2>
-      <p>
-        The purpose of Project Pages is to offer developers a platform where
-        they can upload and display their coding or design projects in a
-        structured portfolio-like layout. Users can explore others' work, learn
-        from projects, connect, and potentially collaborate.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Scenarios</h2>
-      <ul>
-        <li>How can I upload and organize multiple projects on my profile?</li>
-        <li>
-          Where can I browse other developers’ projects by technology or
-          language?
-        </li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Color Schema</h2>
-      <p>
-        The selected colors reflect a bold, modern interface perfect for a tech
-        and creative community.
-      </p>
-      <ul>
-        <li><strong>Primary Accent:</strong> #00BECC (Bright Cyan)</li>
-        <li><strong>Background:</strong> #121212 (Almost Black)</li>
-        <li><strong>Text/Secondary:</strong> #A3A3A3 (Gray)</li>
-        <li><strong>Headlines/CTA:</strong> #7A00CC (Deep Purple)</li>
-        <li><strong>Navigation/Footer:</strong> #1A1A40 (Navy Blue)</li>
-      </ul>
-      <div class="color-samples">
-        <div class="color-sample c1"></div>
-        #00BECC<br />
-        <div class="color-sample c2"></div>
-        #121212<br />
-        <div class="color-sample c3"></div>
-        #A3A3A3<br />
-        <div class="color-sample c4"></div>
-        #7A00CC<br />
-        <div class="color-sample c5"></div>
-        #1A1A40<br />
+    <header>
+      <div class="header-content">
+        <img
+          src="images/logo.svg"
+          alt="Family Budget logo: a blue house with a dollar sign"
+          width="64"
+          height="64"
+        />
+        <div>
+          <p class="eyebrow">Website Planning Document</p>
+          <h1>Family Budget</h1>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="section">
-      <h2>Typography</h2>
-      <ul>
-        <li>
-          <strong>Roboto Slab (serif):</strong> for headings – gives a bold,
-          professional structure.
-        </li>
-        <li>
-          <strong>Open Sans (sans-serif):</strong> for body text – ensures
-          legibility on dark backgrounds.
-        </li>
-      </ul>
-    </div>
+    <main>
+      <section class="card">
+        <h2>Site Name</h2>
+        <p>
+          <strong>Family Budget</strong>: a simple, clear name that tells
+          visitors right away the site is about practical budgeting for
+          families. The house-and-dollar logo above will appear in the header of
+          every page.
+        </p>
+        <p>Possible domain: <code>familybudget.org</code></p>
+      </section>
 
-    <div class="section">
-      <h2>Wireframes</h2>
-      <p>Below are wireframes for the homepage layout.</p>
+      <section class="card">
+        <h2>Site Purpose</h2>
+        <p>
+          The site is a budgeting site for young families. It explains how to
+          build a monthly budget, track weekly spending, and stay on top of
+          bills, with simple tips for families with small children and a form to
+          sign up for a free monthly budget template.
+        </p>
+      </section>
 
-      <h3>Wireframe</h3>
-      <img src="wireframe-mobile.png" alt="wireframe" />
-    </div>
+      <section class="card">
+        <h2>Scenarios</h2>
+        <ul>
+          <li>
+            How do I start a budget when we have a new baby and money is tight?
+          </li>
+          <li>What budget categories should a young family track?</li>
+          <li>How often should we check our spending: weekly or monthly?</li>
+          <li>Where can I get a free budget template to use with my spouse?</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Color Schema</h2>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="chip bg"></div>
+            <p><strong>#1E1E1E</strong><br />Page background</p>
+          </div>
+          <div class="swatch">
+            <div class="chip panel"></div>
+            <p><strong>#252526</strong><br />Cards, panels, footer</p>
+          </div>
+          <div class="swatch">
+            <div class="chip header-blue"></div>
+            <p><strong>#264F78</strong><br />Header band</p>
+          </div>
+          <div class="swatch">
+            <div class="chip accent"></div>
+            <p>
+              <strong>#569CD6</strong><br />Section headings, accents, buttons
+            </p>
+          </div>
+          <div class="swatch">
+            <div class="chip link"></div>
+            <p><strong>#9CDCFE</strong><br />Links, nav, captions</p>
+          </div>
+          <div class="swatch">
+            <div class="chip highlight"></div>
+            <p><strong>#DCDCAA</strong><br />Page titles, bold highlights</p>
+          </div>
+          <div class="swatch">
+            <div class="chip text"></div>
+            <p><strong>#D4D4D4</strong><br />Paragraph text</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Typography</h2>
+        <div class="type-sample">
+          <p class="sample-heading">Fira Code 600: Headings</p>
+          <p>Used for the site name, page headings and card titles.</p>
+        </div>
+        <div class="type-sample">
+          <p>
+            Fira Code 400: Body text. Used for paragraphs, navigation links,
+            form labels and the footer. A clean monospace Google Font that
+            matches the code-editor look used across my WDD 131 pages. I really
+            like the colors of visual studio code and its typography so I wanted
+            to kind of match it here.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Wireframes</h2>
+        <div class="wireframes">
+          <figure>
+            <img
+              src="images/wireframe-mobile.svg"
+              alt="Mobile wireframe: header with logo and hamburger menu, hero with call-to-action button, three stacked cards, monthly tip image and text, footer"
+              width="260"
+              height="560"
+              loading="lazy"
+            />
+            <figcaption>Home page: mobile view</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/wireframe-desktop.svg"
+              alt="Desktop wireframe: header with logo and full navigation, hero with text left and image right, three cards in a row, monthly tip with image left and text right, footer"
+              width="640"
+              height="420"
+              loading="lazy"
+            />
+            <figcaption>Home page: desktop view</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span> Daniel McKenna | WDD 131</p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>

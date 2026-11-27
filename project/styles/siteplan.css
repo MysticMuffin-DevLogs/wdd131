@@ -1,0 +1,208 @@
+/* Same palette and font as the rest of WDD 131 (base.css),
+   with the orange accent swapped for blues */
+:root {
+  --bg: #1e1e1e;
+  --panel: #252526;
+  --text: #d4d4d4;
+  --link: #9cdcfe;
+  --accent: #569cd6; /* replaces orange #ce9178 */
+  --highlight: #dcdcaa;
+  --header-blue: #264f78;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+}
+
+/* Header band */
+header {
+  background-color: var(--header-blue);
+  padding: 1.25rem 1rem;
+}
+
+.header-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-content img {
+  width: 64px;
+  height: 64px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--link);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+/* Main */
+main {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--panel);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  color: var(--accent);
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+strong {
+  color: var(--highlight);
+}
+
+code {
+  background-color: var(--bg);
+  color: var(--link);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* Color swatches */
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.swatch {
+  background-color: var(--bg);
+  border: 1px solid #3c3c3c;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chip {
+  height: 70px;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.swatch p {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.chip.bg { background-color: var(--bg); }
+.chip.panel { background-color: var(--panel); }
+.chip.text { background-color: var(--text); }
+.chip.link { background-color: var(--link); }
+.chip.accent { background-color: var(--accent); }
+.chip.highlight { background-color: var(--highlight); }
+.chip.header-blue { background-color: var(--header-blue); }
+
+/* Typography samples */
+.type-sample {
+  background-color: var(--bg);
+  border-left: 5px solid var(--accent);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.type-sample p {
+  margin: 0;
+}
+
+.sample-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Wireframes */
+.wireframes {
+  display: grid;
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0.75rem;
+  background-color: var(--bg);
+  border-radius: 12px;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--link);
+}
+
+/* Footer */
+footer {
+  background-color: var(--panel);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+/* Wider screens */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  .wireframes {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+}
